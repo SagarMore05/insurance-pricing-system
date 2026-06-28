@@ -1,0 +1,30 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+
+# Pytest
+.pytest_cache/
+
+# IDE
+.vscode/
+
+# Claude
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model artifacts (optional)
+# OS
+.DS_Store
+Thumbs.db
+
+# Model artifacts (optional)

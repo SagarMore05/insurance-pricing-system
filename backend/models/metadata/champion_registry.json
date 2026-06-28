@@ -1,0 +1,61 @@
+{
+  "registry_version": "2.1.0",
+  "last_updated": "2026-06-28",
+  "created_by": "multi_algorithm_engine",
+  "description": "Insurance AI Pricing System — Champion Model Registry. All champions trained on motor_insurance_master_dataset_50000.csv. Run: run_20260628_153451_5246d9db.",
+  "frequency": {
+    "champion": "CATBOOST_MultiRun",
+    "algorithm": "CatBoostClassifier",
+    "metric": "ROC_AUC",
+    "score": 0.7783,
+    "baseline_score": 0.7783,
+    "model_path": "models\\saved\\frequency_production.pkl",
+    "preprocessor_path": "models/saved/preprocessor.pkl",
+    "preprocessor_version": "V1",
+    "feature_count": 33,
+    "version": "v12.0.0",
+    "trained_on_rows": 50000,
+    "train_dataset": "motor_insurance_master_dataset_50000.csv",
+    "promotion_date": "2026-06-28",
+    "promoted_by": "multi_algorithm_engine/run_20260628_153451_5246d9db",
+    "training_timestamp": "2026-06-28T10:05:06",
+    "run_id": "run_20260628_153451_5246d9db",
+    "eval_metrics": {
+      "roc_auc": 0.7783,
+      "pr_auc": 0.5253,
+      "f1": 0.5045,
+      "precision": 0.4039,
+      "recall": 0.672,
+      "brier_score": 0.179
+    },
+    "deployment_status": "active",
+    "deployment_note": "Production model. Winner of multi-algorithm comparison (run run_20260628_153451_5246d9db). Algorithm: catboost. Dataset: motor_insurance_master_dataset_50000.csv."
+  },
+  "severity": {
+    "champion": "XGBOOST_MultiRun",
+    "algorithm": "XGBoostRegressor",
+    "metric": "R2",
+    "score": 0.9222,
+    "baseline_score": 0.9222,
+    "model_path": "models\\saved\\severity_production.pkl",
+    "model_pkl_path": "models\\saved\\severity_production.pkl",
+    "preprocessor_path": "models/saved/preprocessor.pkl",
+    "preprocessor_version": "V1",
+    "feature_count": 33,
+    "version": "v12.0.0",
+    "trained_on_rows": 50000,
+    "train_dataset": "motor_insurance_master_dataset_50000.csv",
+    "promotion_date": "2026-06-28",
+    "promoted_by": "multi_algorithm_engine/run_20260628_153451_5246d9db",
+    "training_timestamp": "2026-06-28T10:05:06",
+    "run_id": "run_20260628_153451_5246d9db",
+    "eval_metrics": {
+      "r2": 0.9222,
+      "rmse": 32287.97,
+      "mae": 18629.06,
+      "mape_pct": 19.14
+    },
+    "deployment_status": "active",
+    "deployment_note": "Production model. Winner of multi-algorithm comparison (run run_20260628_153451_5246d9db). Algorithm: xgboost. Dataset: motor_insurance_master_dataset_50000.csv."
+  }
+}

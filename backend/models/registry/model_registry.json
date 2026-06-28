@@ -1,0 +1,219 @@
+{
+  "registry_version": "2.1.0",
+  "schema": "model_registry_v2",
+  "last_updated": "2026-06-28T10:05:06",
+  "description": "Canonical model registry. Winners of multi-algorithm engine run run_20260628_153451_5246d9db. Both models trained on motor_insurance_master_dataset_50000.csv.",
+  "frequency": {
+    "production": {
+      "model_id": "freq_catboost_run_20260628_153451_5246d9db",
+      "model_name": "Catboost Classifier",
+      "model_type": "frequency",
+      "algorithm": "CatBoostClassifier",
+      "version": "v12.0.0",
+      "status": "production",
+      "serving_status": "active",
+      "training_timestamp": "2026-06-28T10:05:06",
+      "promotion_date": "2026-06-28",
+      "promoted_by": "multi_algorithm_engine/run_20260628_153451_5246d9db",
+      "dataset": "motor_insurance_master_dataset_50000.csv",
+      "dataset_hash": "d1dd89bb8b5b563221b0b6f3ebc8720b",
+      "n_total_rows": 50000,
+      "n_train_rows": 40000,
+      "n_val_rows": 5000,
+      "n_test_rows": 5000,
+      "feature_count": 33,
+      "feature_names": [
+        "feature_0",
+        "feature_1",
+        "feature_2",
+        "feature_3",
+        "feature_4",
+        "feature_5",
+        "feature_6",
+        "feature_7",
+        "feature_8",
+        "feature_9",
+        "feature_10",
+        "feature_11",
+        "feature_12",
+        "feature_13",
+        "feature_14",
+        "feature_15",
+        "feature_16",
+        "feature_17",
+        "feature_18",
+        "feature_19",
+        "feature_20",
+        "feature_21",
+        "feature_22",
+        "feature_23",
+        "feature_24",
+        "feature_25",
+        "feature_26",
+        "feature_27",
+        "feature_28",
+        "feature_29",
+        "feature_30",
+        "feature_31",
+        "feature_32"
+      ],
+      "preprocessor": "InsurancePreprocessorV1",
+      "preprocessor_path": "models/saved/preprocessor.pkl",
+      "artifact_path": "models\\saved\\frequency_production.pkl",
+      "artifact_size_mb": 0.33,
+      "run_id": "run_20260628_153451_5246d9db",
+      "metrics": {
+        "auc_roc": 0.7783,
+        "pr_auc": 0.5253,
+        "f1": 0.5045,
+        "precision": 0.4039,
+        "recall": 0.672,
+        "brier_score": 0.179,
+        "threshold": 0.5
+      },
+      "all_algorithms": {
+        "xgboost": {
+          "status": "success",
+          "metrics": {
+            "roc_auc": 0.7717,
+            "pr_auc": 0.5172,
+            "precision": 0.4155,
+            "recall": 0.6308,
+            "f1": 0.501,
+            "brier_score": 0.1716,
+            "threshold": 0.5,
+            "n_samples": 5000,
+            "n_positive": 994,
+            "positive_rate": 0.1988
+          },
+          "training_time_sec": 2.345
+        },
+        "lightgbm": {
+          "status": "success",
+          "metrics": {
+            "roc_auc": 0.7756,
+            "pr_auc": 0.5239,
+            "precision": 0.4223,
+            "recall": 0.664,
+            "f1": 0.5162,
+            "brier_score": 0.1749,
+            "threshold": 0.5,
+            "n_samples": 5000,
+            "n_positive": 994,
+            "positive_rate": 0.1988
+          },
+          "training_time_sec": 0.774
+        },
+        "catboost": {
+          "status": "success",
+          "metrics": {
+            "roc_auc": 0.7783,
+            "pr_auc": 0.5253,
+            "precision": 0.4039,
+            "recall": 0.672,
+            "f1": 0.5045,
+            "brier_score": 0.179,
+            "threshold": 0.5,
+            "n_samples": 5000,
+            "n_positive": 994,
+            "positive_rate": 0.1988
+          },
+          "training_time_sec": 2.336
+        }
+      },
+      "dataset_ceiling": {
+        "theoretical_auc_ceiling": 0.77,
+        "note": "Ceiling imposed by synthetic dataset. Max feature corr=0.42."
+      },
+      "notes": "Winner of 3-way algorithm comparison in run run_20260628_153451_5246d9db. Algorithms evaluated: XGBoost, LightGBM, CatBoost."
+    },
+    "candidate": null,
+    "archived": []
+  },
+  "severity": {
+    "production": {
+      "model_id": "sev_xgboost_run_20260628_153451_5246d9db",
+      "model_name": "Xgboost Regressor",
+      "model_type": "severity",
+      "algorithm": "XGBoostRegressor",
+      "version": "v12.0.0",
+      "status": "production",
+      "serving_status": "active",
+      "training_timestamp": "2026-06-28T10:05:06",
+      "promotion_date": "2026-06-28",
+      "promoted_by": "multi_algorithm_engine/run_20260628_153451_5246d9db",
+      "dataset": "motor_insurance_master_dataset_50000.csv",
+      "dataset_hash": "d1dd89bb8b5b563221b0b6f3ebc8720b",
+      "n_total_rows": 50000,
+      "n_train_rows": 7953,
+      "n_val_rows": 994,
+      "n_test_rows": 994,
+      "feature_count": 33,
+      "preprocessor": "InsurancePreprocessorV1",
+      "preprocessor_path": "models/saved/preprocessor.pkl",
+      "artifact_path": "models\\saved\\severity_production.pkl",
+      "artifact_size_mb": 0.63,
+      "run_id": "run_20260628_153451_5246d9db",
+      "metrics": {
+        "r2": 0.9222,
+        "rmse": 32287.97,
+        "mae": 18629.06,
+        "mape_pct": 19.14
+      },
+      "all_algorithms": {
+        "xgboost": {
+          "status": "success",
+          "metrics": {
+            "rmse": 32287.97,
+            "mae": 18629.06,
+            "r2": 0.9222,
+            "mape_pct": 19.14,
+            "n_samples": 994,
+            "mean_actual": 108254.65,
+            "mean_predicted": 109427.86,
+            "cv_r2_mean": 0.9229,
+            "cv_r2_std": 0.0042
+          },
+          "training_time_sec": 0.282
+        },
+        "lightgbm": {
+          "status": "success",
+          "metrics": {
+            "rmse": 32316.68,
+            "mae": 18618.9,
+            "r2": 0.9221,
+            "mape_pct": 18.68,
+            "n_samples": 994,
+            "mean_actual": 108254.65,
+            "mean_predicted": 109511.4,
+            "cv_r2_mean": 0.9223,
+            "cv_r2_std": 0.0033
+          },
+          "training_time_sec": 0.238
+        },
+        "catboost": {
+          "status": "success",
+          "metrics": {
+            "rmse": 33193.14,
+            "mae": 19008.64,
+            "r2": 0.9178,
+            "mape_pct": 19.15,
+            "n_samples": 994,
+            "mean_actual": 108254.65,
+            "mean_predicted": 109504.78,
+            "cv_r2_mean": 0.9179,
+            "cv_r2_std": 0.0035
+          },
+          "training_time_sec": 0.596
+        }
+      },
+      "dataset_ceiling": {
+        "theoretical_r2_ceiling": 0.01,
+        "note": "Claim amounts randomly sampled in synthetic dataset. R2 ceiling ~0.01."
+      },
+      "notes": "Winner of 3-way algorithm comparison in run run_20260628_153451_5246d9db. Trained on claimants only (7953 train rows). Algorithms evaluated: XGBoost, LightGBM, CatBoost."
+    },
+    "candidate": null,
+    "archived": []
+  }
+}

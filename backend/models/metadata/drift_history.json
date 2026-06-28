@@ -1,0 +1,1794 @@
+[
+  {
+    "computed_at": "2026-06-25T14:02:39.597454",
+    "window_days": 30,
+    "prod_sample_n": 23,
+    "psi_low_threshold": 0.1,
+    "psi_high_threshold": 0.25,
+    "feature_results": [
+      {
+        "feature": "age",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "annual_mileage_km",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "vehicle_value_inr",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "driving_score",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "vehicle_safety_rating",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "pincode_risk_score",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "flood_risk_index",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "theft_risk_index",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "monsoon_exposure_index",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "vehicle_age_years",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "years_licensed",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "policy_tenure_years",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "previous_claims_count",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "months_since_last_claim",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "no_claim_bonus_pct",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "airbags_count",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "policy_inception_month",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "engine_cc",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "gender",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Male",
+          "Female",
+          "Other"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "occupation",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Salaried",
+          "Professional",
+          "Self-Employed",
+          "Retired",
+          "Student",
+          "Manual"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "marital_status",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Married",
+          "Single",
+          "Divorced",
+          "Widowed"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "annual_income_band",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "3-7 LPA",
+          "7-15 LPA",
+          "15-30 LPA",
+          "<3 LPA",
+          ">30 LPA"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "city",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Delhi",
+          "Bangalore",
+          "Mumbai",
+          "Chennai",
+          "Hyderabad",
+          "Kolkata",
+          "Ahmedabad",
+          "Pune",
+          "Lucknow",
+          "Jaipur",
+          "Indore",
+          "Kanpur",
+          "Patna",
+          "Surat",
+          "Vadodara",
+          "Visakhapatnam",
+          "Bhopal",
+          "Nagpur",
+          "Coimbatore",
+          "Agra"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "fuel_type",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Petrol",
+          "Diesel",
+          "Electric",
+          "Hybrid"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "vehicle_usage_type",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Personal",
+          "Commercial",
+          "Rideshare"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "parking_type",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Open_Compound",
+          "Garage",
+          "Street"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "repair_cost_band",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Standard",
+          "Budget",
+          "Premium",
+          "Luxury"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "vehicle_body_style",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "SUV",
+          "Hatchback",
+          "Sedan",
+          "MUV"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "vehicle_make",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Maruti",
+          "Hyundai",
+          "Tata",
+          "Honda",
+          "Toyota",
+          "Mahindra",
+          "Kia",
+          "Renault",
+          "Skoda",
+          "MG",
+          "Ford",
+          "Jeep",
+          "Mercedes",
+          "BMW",
+          "Audi",
+          "BYD",
+          "Porsche"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "region_risk_category",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "1",
+          "2"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      }
+    ],
+    "overall_psi": 0.0,
+    "overall_severity": "no_data",
+    "recommendation": "Insufficient Data \u2014 accumulate \u226530 V2 quotes",
+    "alerts": [],
+    "high_drift_features": [],
+    "medium_drift_features": [],
+    "features_computed": 0,
+    "features_skipped": 30
+  },
+  {
+    "computed_at": "2026-06-25T17:42:51.622441",
+    "window_days": 30,
+    "prod_sample_n": 23,
+    "psi_low_threshold": 0.1,
+    "psi_high_threshold": 0.25,
+    "feature_results": [
+      {
+        "feature": "age",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "annual_mileage_km",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "vehicle_value_inr",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "driving_score",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "vehicle_safety_rating",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "pincode_risk_score",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "flood_risk_index",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "theft_risk_index",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "monsoon_exposure_index",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "vehicle_age_years",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "years_licensed",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "policy_tenure_years",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "previous_claims_count",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "months_since_last_claim",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "no_claim_bonus_pct",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "airbags_count",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "policy_inception_month",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "engine_cc",
+        "feature_type": "numeric",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [
+          10.0,
+          15.0,
+          25.0,
+          25.0,
+          15.0,
+          9.0,
+          1.0
+        ],
+        "prod_bins": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bin_labels": [
+          "< p10",
+          "p10-p25",
+          "p25-p50",
+          "p50-p75",
+          "p75-p90",
+          "p90-p99",
+          "\u2265 p99"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "gender",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Male",
+          "Female",
+          "Other"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "occupation",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Salaried",
+          "Professional",
+          "Self-Employed",
+          "Retired",
+          "Student",
+          "Manual"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "marital_status",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Married",
+          "Single",
+          "Divorced",
+          "Widowed"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "annual_income_band",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "3-7 LPA",
+          "7-15 LPA",
+          "15-30 LPA",
+          "<3 LPA",
+          ">30 LPA"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "city",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Delhi",
+          "Bangalore",
+          "Mumbai",
+          "Chennai",
+          "Hyderabad",
+          "Kolkata",
+          "Ahmedabad",
+          "Pune",
+          "Lucknow",
+          "Jaipur",
+          "Indore",
+          "Kanpur",
+          "Patna",
+          "Surat",
+          "Vadodara",
+          "Visakhapatnam",
+          "Bhopal",
+          "Nagpur",
+          "Coimbatore",
+          "Agra"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "fuel_type",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Petrol",
+          "Diesel",
+          "Electric",
+          "Hybrid"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "vehicle_usage_type",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Personal",
+          "Commercial",
+          "Rideshare"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "parking_type",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Open_Compound",
+          "Garage",
+          "Street"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "repair_cost_band",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Standard",
+          "Budget",
+          "Premium",
+          "Luxury"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "vehicle_body_style",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "SUV",
+          "Hatchback",
+          "Sedan",
+          "MUV"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "vehicle_make",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "Maruti",
+          "Hyundai",
+          "Tata",
+          "Honda",
+          "Toyota",
+          "Mahindra",
+          "Kia",
+          "Renault",
+          "Skoda",
+          "MG",
+          "Ford",
+          "Jeep",
+          "Mercedes",
+          "BMW",
+          "Audi",
+          "BYD",
+          "Porsche"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      },
+      {
+        "feature": "region_risk_category",
+        "feature_type": "categorical",
+        "psi": 0.0,
+        "severity": "insufficient_data",
+        "ref_n": 50000,
+        "prod_n": 23,
+        "ref_bins": [],
+        "prod_bins": [],
+        "bin_labels": [
+          "1",
+          "2"
+        ],
+        "alert": "Skipped: only 23 production samples (min 30)"
+      }
+    ],
+    "overall_psi": 0.0,
+    "overall_severity": "no_data",
+    "recommendation": "Insufficient Data \u2014 accumulate \u226530 V2 quotes",
+    "alerts": [],
+    "high_drift_features": [],
+    "medium_drift_features": [],
+    "features_computed": 0,
+    "features_skipped": 30
+  }
+]

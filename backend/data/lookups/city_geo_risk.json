@@ -1,0 +1,161 @@
+{
+  "_metadata": {
+    "description": "City-level geographic risk lookup table for V4 champion model enrichment",
+    "source": "car_insurance_portfolio_v4.csv — 20 unique cities",
+    "key_structure": "{City: {risk_fields}}",
+    "risk_scale": "All risk indices are on a continuous 1-10 scale (1=lowest risk, 10=highest risk). Values are per-city representative means derived from the V4 training dataset.",
+    "fields": {
+      "region_risk_category": "str  High|Medium  (High = Tier-1 metro, Medium = Tier-2 city)",
+      "flood_risk_index": "float 1.0-10.0  (historical flood frequency x severity; NDMA India Flood Hazard Atlas)",
+      "theft_risk_index": "float 1.0-10.0  (vehicle theft incidence rate; NCRB 2023)",
+      "monsoon_exposure_index": "float 1.0-10.0  (average annual monsoon rainfall intensity; IMD)"
+    },
+    "category_mapping": {
+      "High": "Tier-1 metropolitan cities with elevated urbanisation-driven risk (dataset code: 1)",
+      "Medium": "Tier-2 cities with moderate risk profile (dataset code: 2)"
+    },
+    "version": "1.0.0",
+    "created": "2026-06-22",
+    "city_count": 20
+  },
+
+  "Agra": {
+    "region_risk_category": "Medium",
+    "flood_risk_index": 4.0,
+    "theft_risk_index": 5.0,
+    "monsoon_exposure_index": 5.0
+  },
+
+  "Ahmedabad": {
+    "region_risk_category": "High",
+    "flood_risk_index": 4.0,
+    "theft_risk_index": 5.5,
+    "monsoon_exposure_index": 5.0
+  },
+
+  "Bangalore": {
+    "region_risk_category": "High",
+    "flood_risk_index": 4.5,
+    "theft_risk_index": 5.5,
+    "monsoon_exposure_index": 7.0
+  },
+
+  "Bhopal": {
+    "region_risk_category": "Medium",
+    "flood_risk_index": 4.0,
+    "theft_risk_index": 4.0,
+    "monsoon_exposure_index": 5.5
+  },
+
+  "Chennai": {
+    "region_risk_category": "High",
+    "flood_risk_index": 7.0,
+    "theft_risk_index": 4.5,
+    "monsoon_exposure_index": 8.5
+  },
+
+  "Coimbatore": {
+    "region_risk_category": "Medium",
+    "flood_risk_index": 3.5,
+    "theft_risk_index": 3.5,
+    "monsoon_exposure_index": 6.0
+  },
+
+  "Delhi": {
+    "region_risk_category": "High",
+    "flood_risk_index": 5.0,
+    "theft_risk_index": 8.5,
+    "monsoon_exposure_index": 6.0
+  },
+
+  "Hyderabad": {
+    "region_risk_category": "High",
+    "flood_risk_index": 5.5,
+    "theft_risk_index": 5.0,
+    "monsoon_exposure_index": 6.5
+  },
+
+  "Indore": {
+    "region_risk_category": "Medium",
+    "flood_risk_index": 3.5,
+    "theft_risk_index": 4.0,
+    "monsoon_exposure_index": 5.5
+  },
+
+  "Jaipur": {
+    "region_risk_category": "Medium",
+    "flood_risk_index": 3.0,
+    "theft_risk_index": 5.0,
+    "monsoon_exposure_index": 3.5
+  },
+
+  "Kanpur": {
+    "region_risk_category": "Medium",
+    "flood_risk_index": 5.0,
+    "theft_risk_index": 5.0,
+    "monsoon_exposure_index": 5.5
+  },
+
+  "Kolkata": {
+    "region_risk_category": "High",
+    "flood_risk_index": 8.0,
+    "theft_risk_index": 6.5,
+    "monsoon_exposure_index": 8.5
+  },
+
+  "Lucknow": {
+    "region_risk_category": "Medium",
+    "flood_risk_index": 5.5,
+    "theft_risk_index": 5.5,
+    "monsoon_exposure_index": 6.0
+  },
+
+  "Mumbai": {
+    "region_risk_category": "High",
+    "flood_risk_index": 8.5,
+    "theft_risk_index": 6.0,
+    "monsoon_exposure_index": 9.0
+  },
+
+  "Nagpur": {
+    "region_risk_category": "Medium",
+    "flood_risk_index": 4.5,
+    "theft_risk_index": 4.5,
+    "monsoon_exposure_index": 6.5
+  },
+
+  "Patna": {
+    "region_risk_category": "Medium",
+    "flood_risk_index": 7.5,
+    "theft_risk_index": 5.5,
+    "monsoon_exposure_index": 7.5
+  },
+
+  "Pune": {
+    "region_risk_category": "High",
+    "flood_risk_index": 5.0,
+    "theft_risk_index": 5.0,
+    "monsoon_exposure_index": 7.0
+  },
+
+  "Surat": {
+    "region_risk_category": "Medium",
+    "flood_risk_index": 6.0,
+    "theft_risk_index": 5.0,
+    "monsoon_exposure_index": 6.0
+  },
+
+  "Vadodara": {
+    "region_risk_category": "Medium",
+    "flood_risk_index": 4.5,
+    "theft_risk_index": 4.5,
+    "monsoon_exposure_index": 5.0
+  },
+
+  "Visakhapatnam": {
+    "region_risk_category": "Medium",
+    "flood_risk_index": 6.5,
+    "theft_risk_index": 4.0,
+    "monsoon_exposure_index": 7.5
+  }
+}

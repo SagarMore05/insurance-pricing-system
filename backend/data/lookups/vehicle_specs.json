@@ -1,0 +1,277 @@
+{
+  "_metadata": {
+    "description": "Vehicle specifications lookup table for V4 champion model enrichment",
+    "source": "car_insurance_portfolio_v4.csv — 35 unique make+model combinations",
+    "key_structure": "{Vehicle_Make: {Vehicle_Model: {specs}}}",
+    "fields": {
+      "vehicle_safety_rating": "int  3|4|5  (Global NCAP / Bharat NCAP equivalent star rating)",
+      "airbags_count": "int  2|6|7|8  (factory-fitted airbag count)",
+      "vehicle_body_style": "str  Hatchback|MUV|SUV|Sedan",
+      "repair_cost_band": "str  Budget|Standard|Premium|Luxury"
+    },
+    "version": "1.0.0",
+    "created": "2026-06-22",
+    "vehicle_count": 35
+  },
+
+  "Audi": {
+    "A4": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 8,
+      "vehicle_body_style": "Sedan",
+      "repair_cost_band": "Luxury"
+    }
+  },
+
+  "BMW": {
+    "3 Series": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 8,
+      "vehicle_body_style": "Sedan",
+      "repair_cost_band": "Luxury"
+    },
+    "X5": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 8,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Luxury"
+    }
+  },
+
+  "BYD": {
+    "Atto 3": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Premium"
+    }
+  },
+
+  "Ford": {
+    "Endeavour": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 7,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Premium"
+    }
+  },
+
+  "Honda": {
+    "Accord": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 8,
+      "vehicle_body_style": "Sedan",
+      "repair_cost_band": "Premium"
+    },
+    "BR-V": {
+      "vehicle_safety_rating": 4,
+      "airbags_count": 6,
+      "vehicle_body_style": "MUV",
+      "repair_cost_band": "Standard"
+    },
+    "City": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "Sedan",
+      "repair_cost_band": "Standard"
+    }
+  },
+
+  "Hyundai": {
+    "Creta": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Standard"
+    },
+    "Kona EV": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Premium"
+    },
+    "Verna": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "Sedan",
+      "repair_cost_band": "Standard"
+    },
+    "i20": {
+      "vehicle_safety_rating": 4,
+      "airbags_count": 6,
+      "vehicle_body_style": "Hatchback",
+      "repair_cost_band": "Standard"
+    }
+  },
+
+  "Jeep": {
+    "Compass": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Premium"
+    }
+  },
+
+  "Kia": {
+    "Carens": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "MUV",
+      "repair_cost_band": "Standard"
+    },
+    "Seltos": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Standard"
+    }
+  },
+
+  "MG": {
+    "ZS EV": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Premium"
+    }
+  },
+
+  "Mahindra": {
+    "Scorpio": {
+      "vehicle_safety_rating": 4,
+      "airbags_count": 6,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Standard"
+    },
+    "XUV700": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 7,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Premium"
+    }
+  },
+
+  "Maruti": {
+    "Alto": {
+      "vehicle_safety_rating": 3,
+      "airbags_count": 2,
+      "vehicle_body_style": "Hatchback",
+      "repair_cost_band": "Budget"
+    },
+    "Baleno": {
+      "vehicle_safety_rating": 4,
+      "airbags_count": 6,
+      "vehicle_body_style": "Hatchback",
+      "repair_cost_band": "Budget"
+    },
+    "Dzire": {
+      "vehicle_safety_rating": 4,
+      "airbags_count": 6,
+      "vehicle_body_style": "Sedan",
+      "repair_cost_band": "Budget"
+    },
+    "Ertiga": {
+      "vehicle_safety_rating": 4,
+      "airbags_count": 6,
+      "vehicle_body_style": "MUV",
+      "repair_cost_band": "Budget"
+    },
+    "Swift": {
+      "vehicle_safety_rating": 4,
+      "airbags_count": 2,
+      "vehicle_body_style": "Hatchback",
+      "repair_cost_band": "Budget"
+    }
+  },
+
+  "Mercedes": {
+    "C-Class": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 8,
+      "vehicle_body_style": "Sedan",
+      "repair_cost_band": "Luxury"
+    },
+    "GLE": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 8,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Luxury"
+    }
+  },
+
+  "Porsche": {
+    "Cayenne": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 8,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Luxury"
+    }
+  },
+
+  "Renault": {
+    "Kwid": {
+      "vehicle_safety_rating": 3,
+      "airbags_count": 2,
+      "vehicle_body_style": "Hatchback",
+      "repair_cost_band": "Budget"
+    }
+  },
+
+  "Skoda": {
+    "Slavia": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "Sedan",
+      "repair_cost_band": "Premium"
+    }
+  },
+
+  "Tata": {
+    "Nexon": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Standard"
+    },
+    "Nexon EV": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Premium"
+    },
+    "Tiago": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "Hatchback",
+      "repair_cost_band": "Budget"
+    },
+    "Tiago EV": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 6,
+      "vehicle_body_style": "Hatchback",
+      "repair_cost_band": "Standard"
+    }
+  },
+
+  "Toyota": {
+    "Camry": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 8,
+      "vehicle_body_style": "Sedan",
+      "repair_cost_band": "Premium"
+    },
+    "Fortuner": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 7,
+      "vehicle_body_style": "SUV",
+      "repair_cost_band": "Premium"
+    },
+    "Innova": {
+      "vehicle_safety_rating": 5,
+      "airbags_count": 7,
+      "vehicle_body_style": "MUV",
+      "repair_cost_band": "Standard"
+    }
+  }
+}

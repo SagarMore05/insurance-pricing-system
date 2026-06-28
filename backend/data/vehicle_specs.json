@@ -1,0 +1,757 @@
+{
+  "_metadata": {
+    "description": "Vehicle specification lookup table for V4 champion model enrichment",
+    "key_format": "{brand_normalised}_{model_normalised}",
+    "fields": {
+      "vehicle_safety_rating": "float 0.0-5.0  (Global NCAP star rating or equivalent)",
+      "airbags_count": "int 0-12  (standard factory-fitted airbags)",
+      "vehicle_body_style": "str  Sedan | SUV | Hatchback | MUV | Van | Coupe",
+      "repair_cost_band": "str  Low | Medium | High | Very High"
+    },
+    "data_sources": [
+      "Global NCAP India results 2014-2024 (globalncap.org)",
+      "Bharat NCAP ratings 2023+ (morth.nic.in)",
+      "Manufacturer specification sheets",
+      "SIAM India vehicle data",
+      "Insurance actuarial estimates for repair bands"
+    ],
+    "version": "1.0.0",
+    "created": "2026-06-22",
+    "vehicle_count": 93
+  },
+
+  "maruti_alto_k10": {
+    "vehicle_safety_rating": 1.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "maruti_alto": {
+    "vehicle_safety_rating": 0.0,
+    "airbags_count": 0,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "maruti_swift": {
+    "vehicle_safety_rating": 2.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "maruti_swift_dzire": {
+    "vehicle_safety_rating": 2.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Low"
+  },
+  "maruti_dzire": {
+    "vehicle_safety_rating": 2.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Low"
+  },
+  "maruti_wagonr": {
+    "vehicle_safety_rating": 2.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "maruti_celerio": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "maruti_s_presso": {
+    "vehicle_safety_rating": 2.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "maruti_baleno": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "maruti_brezza": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "maruti_vitara_brezza": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "maruti_fronx": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "maruti_ertiga": {
+    "vehicle_safety_rating": 2.5,
+    "airbags_count": 2,
+    "vehicle_body_style": "MUV",
+    "repair_cost_band": "Medium"
+  },
+  "maruti_xl6": {
+    "vehicle_safety_rating": 2.5,
+    "airbags_count": 6,
+    "vehicle_body_style": "MUV",
+    "repair_cost_band": "Medium"
+  },
+  "maruti_ciaz": {
+    "vehicle_safety_rating": 2.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Low"
+  },
+  "maruti_grand_vitara": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "maruti_invicto": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 7,
+    "vehicle_body_style": "MUV",
+    "repair_cost_band": "High"
+  },
+  "maruti_jimny": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "maruti_eeco": {
+    "vehicle_safety_rating": 1.0,
+    "airbags_count": 0,
+    "vehicle_body_style": "Van",
+    "repair_cost_band": "Low"
+  },
+
+  "hyundai_santro": {
+    "vehicle_safety_rating": 2.5,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "hyundai_i20": {
+    "vehicle_safety_rating": 3.5,
+    "airbags_count": 6,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Medium"
+  },
+  "hyundai_aura": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Low"
+  },
+  "hyundai_venue": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "hyundai_creta": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "hyundai_verna": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "High"
+  },
+  "hyundai_exter": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "hyundai_alcazar": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "MUV",
+    "repair_cost_band": "High"
+  },
+  "hyundai_tucson": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "hyundai_ioniq_5": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+
+  "tata_nano": {
+    "vehicle_safety_rating": 0.5,
+    "airbags_count": 0,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "tata_indica": {
+    "vehicle_safety_rating": 2.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "tata_tiago": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "tata_tigor": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Low"
+  },
+  "tata_altroz": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Medium"
+  },
+  "tata_punch": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "tata_nexon": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "tata_nexon_ev": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "tata_harrier": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "tata_safari": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "MUV",
+    "repair_cost_band": "High"
+  },
+  "tata_curvv": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "tata_be6": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+  "tata_xev9e": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+
+  "honda_brio": {
+    "vehicle_safety_rating": 2.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "honda_jazz": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Medium"
+  },
+  "honda_amaze": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Medium"
+  },
+  "honda_city": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Medium"
+  },
+  "honda_wrv": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "honda_elevate": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+
+  "kia_sonet": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "kia_seltos": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "kia_carens": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "MUV",
+    "repair_cost_band": "Medium"
+  },
+  "kia_ev6": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+
+  "toyota_glanza": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Medium"
+  },
+  "toyota_urban_cruiser_hyryder": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "toyota_hyryder": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "toyota_innova_crysta": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 7,
+    "vehicle_body_style": "MUV",
+    "repair_cost_band": "High"
+  },
+  "toyota_innova_hycross": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 7,
+    "vehicle_body_style": "MUV",
+    "repair_cost_band": "High"
+  },
+  "toyota_fortuner": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 7,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "toyota_camry": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 7,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Very High"
+  },
+  "toyota_vellfire": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "Van",
+    "repair_cost_band": "Very High"
+  },
+
+  "mahindra_kuv100": {
+    "vehicle_safety_rating": 2.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "mahindra_bolero": {
+    "vehicle_safety_rating": 1.5,
+    "airbags_count": 2,
+    "vehicle_body_style": "MUV",
+    "repair_cost_band": "Low"
+  },
+  "mahindra_bolero_neo": {
+    "vehicle_safety_rating": 2.5,
+    "airbags_count": 2,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "mahindra_xuv300": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "mahindra_thar": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "mahindra_scorpio_classic": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "mahindra_scorpio_n": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "mahindra_scorpio": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "mahindra_xuv700": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 7,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "mahindra_be6": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+  "mahindra_xev9e": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+
+  "mg_comet": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Medium"
+  },
+  "mg_astor": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "mg_hector": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "mg_gloster": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+  "mg_windsor": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "mg_zs_ev": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+
+  "volkswagen_polo": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "High"
+  },
+  "volkswagen_vento": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "High"
+  },
+  "volkswagen_taigun": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "volkswagen_virtus": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "High"
+  },
+  "volkswagen_tiguan": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+
+  "skoda_rapid": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "High"
+  },
+  "skoda_octavia": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Very High"
+  },
+  "skoda_kushaq": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+  "skoda_slavia": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "High"
+  },
+  "skoda_superb": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Very High"
+  },
+
+  "renault_kwid": {
+    "vehicle_safety_rating": 0.5,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Low"
+  },
+  "renault_kiger": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+  "renault_triber": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "MUV",
+    "repair_cost_band": "Medium"
+  },
+
+  "nissan_micra": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Medium"
+  },
+  "nissan_magnite": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+
+  "jeep_compass": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+  "jeep_meridian": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 7,
+    "vehicle_body_style": "MUV",
+    "repair_cost_band": "Very High"
+  },
+  "jeep_wrangler": {
+    "vehicle_safety_rating": 4.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+
+  "citroen_c3": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Medium"
+  },
+  "citroen_c3_aircross": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 6,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Medium"
+  },
+
+  "force_gurkha": {
+    "vehicle_safety_rating": 3.0,
+    "airbags_count": 2,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "High"
+  },
+
+  "isuzu_dmax": {
+    "vehicle_safety_rating": 3.5,
+    "airbags_count": 2,
+    "vehicle_body_style": "MUV",
+    "repair_cost_band": "High"
+  },
+
+  "bmw_1_series": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Very High"
+  },
+  "bmw_3_series": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Very High"
+  },
+  "bmw_5_series": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Very High"
+  },
+  "bmw_x1": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+  "bmw_x3": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+  "bmw_x5": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+
+  "mercedes_a_class": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "Hatchback",
+    "repair_cost_band": "Very High"
+  },
+  "mercedes_c_class": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Very High"
+  },
+  "mercedes_e_class": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Very High"
+  },
+  "mercedes_glc": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+  "mercedes_gle": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+
+  "audi_a3": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Very High"
+  },
+  "audi_a4": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Very High"
+  },
+  "audi_q3": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+  "audi_q5": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+  "audi_q7": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+
+  "lexus_es": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "Sedan",
+    "repair_cost_band": "Very High"
+  },
+  "lexus_rx": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+
+  "volvo_xc40": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  },
+  "volvo_xc90": {
+    "vehicle_safety_rating": 5.0,
+    "airbags_count": 8,
+    "vehicle_body_style": "SUV",
+    "repair_cost_band": "Very High"
+  }
+}

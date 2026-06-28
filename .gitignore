@@ -1,0 +1,78 @@
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+
+venv/
+.venv/
+env/
+backend/venv/
+
+# ===========================
+# Node / React
+# ===========================
+node_modules/
+dist/
+build/
+
+# ===========================
+# VS Code
+# ===========================
+.vscode/
+
+# ===========================
+# Logs
+# ===========================
+*.log
+srv_*.txt
+uvicorn_*.txt
+
+# ===========================
+# Cache
+# ===========================
+.pytest_cache/
+catboost_info/
+
+# ===========================
+# Environment Variables
+# ===========================
+.env
+.env.*
+
+# ===========================
+# Operating System
+# ===========================
+.DS_Store
+Thumbs.db
+
+# ===========================
+# Claude Code
+# ===========================
+.claude/
+backend/.claude/
+
+# ===========================
+# Backup folders
+# ===========================
+backend/models/saved_v1_backup/
+backend/data/master/v1_backup/
+backend/models/saved_backup/
+backend/models/champion/
+backend/models/challengers/
+
+# ===========================
+# Training artifacts
+# ===========================
+backend/models/training_runs/
+backend/experiments/outputs/
+
+# ===========================
+# Personal notes
+# ===========================
+1 new complete project info.txt
+2 new compete project info.txt
+3 new complete project architecture.txt

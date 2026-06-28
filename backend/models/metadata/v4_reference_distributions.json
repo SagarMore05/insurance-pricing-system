@@ -1,0 +1,481 @@
+{
+  "meta": {
+    "generated_at": "2026-06-24T18:49:48.254954+00:00",
+    "source_file": "car_insurance_portfolio_v4.csv",
+    "total_rows": 50000,
+    "model_version": "v4.0.0",
+    "description": "Reference feature distributions from V4 training dataset (car_insurance_portfolio_v4.csv, 50 000 rows). Used for PSI-based feature drift detection in production monitoring. PSI < 0.10 = stable (green), 0.10-0.25 = investigate (amber), > 0.25 = significant drift (red)."
+  },
+  "numeric": {
+    "age": {
+      "count": 50000,
+      "mean": 39.39968,
+      "std": 10.134167,
+      "min": 18.0,
+      "max": 73.0,
+      "p10": 26.0,
+      "p25": 32.0,
+      "p50": 39.0,
+      "p75": 46.0,
+      "p90": 53.0,
+      "p99": 63.0
+    },
+    "annual_mileage_km": {
+      "count": 50000,
+      "mean": 16748.12912,
+      "std": 11228.871211,
+      "min": 3851.0,
+      "max": 100000.0,
+      "p10": 8517.0,
+      "p25": 10082.0,
+      "p50": 12469.0,
+      "p75": 17410.5,
+      "p90": 33698.0,
+      "p99": 57335.16
+    },
+    "vehicle_value_inr": {
+      "count": 50000,
+      "mean": 962860.15788,
+      "std": 982720.450776,
+      "min": 100000.0,
+      "max": 13675443.0,
+      "p10": 187784.9,
+      "p25": 403113.0,
+      "p50": 733564.5,
+      "p75": 1195084.5,
+      "p90": 1820862.6,
+      "p99": 5120327.43
+    },
+    "driving_score": {
+      "count": 50000,
+      "mean": 74.183636,
+      "std": 11.622484,
+      "min": 30.2,
+      "max": 100.0,
+      "p10": 56.6,
+      "p25": 68.8,
+      "p50": 76.7,
+      "p75": 82.2,
+      "p90": 86.5,
+      "p99": 93.7
+    },
+    "vehicle_safety_rating": {
+      "count": 50000,
+      "mean": 4.48758,
+      "std": 0.680129,
+      "min": 3.0,
+      "max": 5.0,
+      "p10": 3.0,
+      "p25": 4.0,
+      "p50": 5.0,
+      "p75": 5.0,
+      "p90": 5.0,
+      "p99": 5.0
+    },
+    "pincode_risk_score": {
+      "count": 50000,
+      "mean": 5.975693,
+      "std": 1.147564,
+      "min": 1.89,
+      "max": 10.0,
+      "p10": 4.47,
+      "p25": 5.17,
+      "p50": 5.98,
+      "p75": 6.79,
+      "p90": 7.45,
+      "p99": 8.5
+    },
+    "flood_risk_index": {
+      "count": 50000,
+      "mean": 5.540546,
+      "std": 1.669837,
+      "min": 1.39,
+      "max": 10.0,
+      "p10": 3.62,
+      "p25": 4.32,
+      "p50": 5.16,
+      "p75": 6.79,
+      "p90": 8.17,
+      "p99": 9.16
+    },
+    "theft_risk_index": {
+      "count": 50000,
+      "mean": 5.520414,
+      "std": 1.373011,
+      "min": 1.54,
+      "max": 10.0,
+      "p10": 4.03,
+      "p25": 4.63,
+      "p50": 5.29,
+      "p75": 6.05,
+      "p90": 7.97,
+      "p99": 9.18
+    },
+    "monsoon_exposure_index": {
+      "count": 50000,
+      "mean": 6.690777,
+      "std": 1.455305,
+      "min": 2.17,
+      "max": 10.0,
+      "p10": 4.99,
+      "p25": 5.69,
+      "p50": 6.53,
+      "p75": 7.79,
+      "p90": 8.8,
+      "p99": 9.51
+    },
+    "vehicle_age_years": {
+      "count": 50000,
+      "mean": 5.31176,
+      "std": 4.13232,
+      "min": 0.0,
+      "max": 15.0,
+      "p10": 0.0,
+      "p25": 2.0,
+      "p50": 5.0,
+      "p75": 8.0,
+      "p90": 12.0,
+      "p99": 15.0
+    },
+    "years_licensed": {
+      "count": 50000,
+      "mean": 10.20432,
+      "std": 7.332564,
+      "min": 0.0,
+      "max": 48.0,
+      "p10": 2.0,
+      "p25": 4.0,
+      "p50": 9.0,
+      "p75": 14.0,
+      "p90": 20.0,
+      "p99": 32.0
+    },
+    "policy_tenure_years": {
+      "count": 50000,
+      "mean": 3.717032,
+      "std": 3.340122,
+      "min": 0.5,
+      "max": 25.0,
+      "p10": 1.0,
+      "p25": 1.6,
+      "p50": 2.7,
+      "p75": 4.6,
+      "p90": 7.5,
+      "p99": 17.4
+    },
+    "previous_claims_count": {
+      "count": 50000,
+      "mean": 0.56812,
+      "std": 1.054752,
+      "min": 0.0,
+      "max": 5.0,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p50": 0.0,
+      "p75": 1.0,
+      "p90": 2.0,
+      "p99": 5.0
+    },
+    "months_since_last_claim": {
+      "count": 50000,
+      "mean": 715.26938,
+      "std": 431.428527,
+      "min": 1.0,
+      "max": 999.0,
+      "p10": 40.0,
+      "p25": 99.0,
+      "p50": 999.0,
+      "p75": 999.0,
+      "p90": 999.0,
+      "p99": 999.0
+    },
+    "no_claim_bonus_pct": {
+      "count": 50000,
+      "mean": 24.3529,
+      "std": 18.188716,
+      "min": 0.0,
+      "max": 50.0,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p50": 25.0,
+      "p75": 45.0,
+      "p90": 50.0,
+      "p99": 50.0
+    },
+    "airbags_count": {
+      "count": 50000,
+      "mean": 5.5616,
+      "std": 1.683063,
+      "min": 2.0,
+      "max": 8.0,
+      "p10": 2.0,
+      "p25": 6.0,
+      "p50": 6.0,
+      "p75": 6.0,
+      "p90": 7.0,
+      "p99": 8.0
+    },
+    "policy_inception_month": {
+      "count": 50000,
+      "mean": 6.30404,
+      "std": 3.309921,
+      "min": 1.0,
+      "max": 12.0,
+      "p10": 2.0,
+      "p25": 3.0,
+      "p50": 6.0,
+      "p75": 9.0,
+      "p90": 11.0,
+      "p99": 12.0
+    },
+    "engine_cc": {
+      "count": 50000,
+      "mean": 1301.1885,
+      "std": 720.528107,
+      "min": 0.0,
+      "max": 2519.0,
+      "p10": 0.0,
+      "p25": 1029.0,
+      "p50": 1442.0,
+      "p75": 1820.0,
+      "p90": 2090.0,
+      "p99": 2477.0
+    }
+  },
+  "categorical": {
+    "gender": {
+      "count": 50000,
+      "value_counts": {
+        "Male": 29139,
+        "Female": 19850,
+        "Other": 1011
+      },
+      "value_pcts": {
+        "Male": 58.278,
+        "Female": 39.7,
+        "Other": 2.022
+      }
+    },
+    "occupation": {
+      "count": 50000,
+      "value_counts": {
+        "Salaried": 17624,
+        "Professional": 9832,
+        "Self-Employed": 7498,
+        "Retired": 5077,
+        "Student": 4995,
+        "Manual": 4974
+      },
+      "value_pcts": {
+        "Salaried": 35.248,
+        "Professional": 19.664,
+        "Self-Employed": 14.996,
+        "Retired": 10.154,
+        "Student": 9.99,
+        "Manual": 9.948
+      }
+    },
+    "marital_status": {
+      "count": 50000,
+      "value_counts": {
+        "Married": 27642,
+        "Single": 14900,
+        "Divorced": 4960,
+        "Widowed": 2498
+      },
+      "value_pcts": {
+        "Married": 55.284,
+        "Single": 29.8,
+        "Divorced": 9.92,
+        "Widowed": 4.996
+      }
+    },
+    "annual_income_band": {
+      "count": 50000,
+      "value_counts": {
+        "3-7 LPA": 15240,
+        "7-15 LPA": 12346,
+        "15-30 LPA": 9022,
+        "<3 LPA": 8990,
+        ">30 LPA": 4402
+      },
+      "value_pcts": {
+        "3-7 LPA": 30.48,
+        "7-15 LPA": 24.692,
+        "15-30 LPA": 18.044,
+        "<3 LPA": 17.98,
+        ">30 LPA": 8.804
+      }
+    },
+    "city": {
+      "count": 50000,
+      "value_counts": {
+        "Delhi": 5784,
+        "Bangalore": 4818,
+        "Mumbai": 4757,
+        "Chennai": 3817,
+        "Hyderabad": 3756,
+        "Kolkata": 3399,
+        "Ahmedabad": 2958,
+        "Pune": 2850,
+        "Lucknow": 1921,
+        "Jaipur": 1916,
+        "Indore": 1547,
+        "Kanpur": 1500,
+        "Patna": 1453,
+        "Surat": 1437,
+        "Vadodara": 1436,
+        "Visakhapatnam": 1425,
+        "Bhopal": 1425,
+        "Nagpur": 1418,
+        "Coimbatore": 1396,
+        "Agra": 987
+      },
+      "value_pcts": {
+        "Delhi": 11.568,
+        "Bangalore": 9.636,
+        "Mumbai": 9.514,
+        "Chennai": 7.634,
+        "Hyderabad": 7.512,
+        "Kolkata": 6.798,
+        "Ahmedabad": 5.916,
+        "Pune": 5.7,
+        "Lucknow": 3.842,
+        "Jaipur": 3.832,
+        "Indore": 3.094,
+        "Kanpur": 3.0,
+        "Patna": 2.906,
+        "Surat": 2.874,
+        "Vadodara": 2.872,
+        "Visakhapatnam": 2.85,
+        "Bhopal": 2.85,
+        "Nagpur": 2.836,
+        "Coimbatore": 2.792,
+        "Agra": 1.974
+      }
+    },
+    "fuel_type": {
+      "count": 50000,
+      "value_counts": {
+        "Petrol": 22536,
+        "Diesel": 13184,
+        "Electric": 9320,
+        "Hybrid": 4960
+      },
+      "value_pcts": {
+        "Petrol": 45.072,
+        "Diesel": 26.368,
+        "Electric": 18.64,
+        "Hybrid": 9.92
+      }
+    },
+    "vehicle_usage_type": {
+      "count": 50000,
+      "value_counts": {
+        "Personal": 39064,
+        "Commercial": 6951,
+        "Rideshare": 3985
+      },
+      "value_pcts": {
+        "Personal": 78.128,
+        "Commercial": 13.902,
+        "Rideshare": 7.97
+      }
+    },
+    "parking_type": {
+      "count": 50000,
+      "value_counts": {
+        "Open_Compound": 20118,
+        "Garage": 17316,
+        "Street": 12566
+      },
+      "value_pcts": {
+        "Open_Compound": 40.236,
+        "Garage": 34.632,
+        "Street": 25.132
+      }
+    },
+    "repair_cost_band": {
+      "count": 50000,
+      "value_counts": {
+        "Standard": 21092,
+        "Budget": 17169,
+        "Premium": 10095,
+        "Luxury": 1644
+      },
+      "value_pcts": {
+        "Standard": 42.184,
+        "Budget": 34.338,
+        "Premium": 20.19,
+        "Luxury": 3.288
+      }
+    },
+    "vehicle_body_style": {
+      "count": 50000,
+      "value_counts": {
+        "SUV": 17395,
+        "Hatchback": 16725,
+        "Sedan": 11631,
+        "MUV": 4249
+      },
+      "value_pcts": {
+        "SUV": 34.79,
+        "Hatchback": 33.45,
+        "Sedan": 23.262,
+        "MUV": 8.498
+      }
+    },
+    "vehicle_make": {
+      "count": 50000,
+      "value_counts": {
+        "Maruti": 13101,
+        "Hyundai": 8424,
+        "Tata": 6763,
+        "Honda": 3905,
+        "Toyota": 3448,
+        "Mahindra": 3445,
+        "Kia": 3117,
+        "Renault": 1862,
+        "Skoda": 1585,
+        "MG": 776,
+        "Ford": 772,
+        "Jeep": 758,
+        "Mercedes": 573,
+        "BMW": 560,
+        "Audi": 406,
+        "BYD": 400,
+        "Porsche": 105
+      },
+      "value_pcts": {
+        "Maruti": 26.202,
+        "Hyundai": 16.848,
+        "Tata": 13.526,
+        "Honda": 7.81,
+        "Toyota": 6.896,
+        "Mahindra": 6.89,
+        "Kia": 6.234,
+        "Renault": 3.724,
+        "Skoda": 3.17,
+        "MG": 1.552,
+        "Ford": 1.544,
+        "Jeep": 1.516,
+        "Mercedes": 1.146,
+        "BMW": 1.12,
+        "Audi": 0.812,
+        "BYD": 0.8,
+        "Porsche": 0.21
+      }
+    },
+    "region_risk_category": {
+      "count": 50000,
+      "value_counts": {
+        "1": 32139,
+        "2": 17861
+      },
+      "value_pcts": {
+        "1": 64.278,
+        "2": 35.722
+      }
+    }
+  }
+}

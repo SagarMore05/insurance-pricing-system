@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0.0",
+  "events": [
+    {
+      "timestamp": "2026-06-22T00:00:00",
+      "event_type": "registry_creation",
+      "model_type": "frequency",
+      "action": "initial_champion_registered",
+      "metric": "ROC_AUC",
+      "old_score": 0.6877,
+      "new_score": 0.6897,
+      "decision": "REGISTERED_VALIDATED",
+      "challenger": "XGBoost_V4",
+      "incumbent": "XGBoost_V1",
+      "notes": "Registry initialized. V4 XGBoost designated frequency champion. Deployment_status=validated pending API V4 upgrade."
+    },
+    {
+      "timestamp": "2026-06-22T00:00:00",
+      "event_type": "registry_creation",
+      "model_type": "severity",
+      "action": "initial_champion_registered",
+      "metric": "R2",
+      "old_score": 0.5092,
+      "new_score": 0.5378,
+      "decision": "REGISTERED_VALIDATED",
+      "challenger": "CatBoost_V4",
+      "incumbent": "XGBoost_V1",
+      "notes": "Registry initialized. CatBoost V4 designated severity champion (R2 gain +0.0286 > threshold 0.010). Deployment_status=validated pending API V4 upgrade."
+    },
+    {
+      "timestamp": "2026-06-22T18:26:29.075004",
+      "event_type": "activation",
+      "model_type": "frequency",
+      "action": "champion_activated",
+      "metric": "ROC_AUC",
+      "old_score": null,
+      "new_score": 0.6897,
+      "decision": "ACTIVATED",
+      "challenger": "XGBoost_V4",
+      "incumbent": null,
+      "notes": "Phase 4 activation — all validation gates passed on 2026-06-22. XGBoost_V4 ROC-AUC=0.6897 > V1 baseline 0.6877 (+0.002). Preprocessing: InsurancePreprocessorV4 (59 features). Activated via phase4_activate.py."
+    },
+    {
+      "timestamp": "2026-06-22T18:26:29.099013",
+      "event_type": "activation",
+      "model_type": "severity",
+      "action": "champion_activated",
+      "metric": "R2",
+      "old_score": null,
+      "new_score": 0.5378,
+      "decision": "ACTIVATED",
+      "challenger": "CatBoost_V4",
+      "incumbent": null,
+      "notes": "Phase 4 activation — all validation gates passed on 2026-06-22. CatBoost_V4 R2=0.5378 > V1 baseline R2=0.5092 (+0.0286). Preprocessing: InsurancePreprocessorV4 (59 features). Activated via phase4_activate.py."
+    }
+  ]
+}

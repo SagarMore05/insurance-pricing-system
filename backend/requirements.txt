@@ -1,0 +1,72 @@
+# ============================================================
+# Insurance AI Pricing System — Backend Dependencies
+# Audited: 2026-06-25  (dependency_audit_report.txt)
+# All versions pinned to what is installed and verified working.
+# ============================================================
+
+# ── Core web framework ────────────────────────────────────────
+fastapi==0.110.0
+uvicorn[standard]==0.28.0
+
+# ── Database ──────────────────────────────────────────────────
+sqlalchemy[asyncio]==2.0.28
+asyncpg==0.29.0
+alembic==1.13.1
+psycopg2-binary==2.9.9
+
+# ── Data validation ───────────────────────────────────────────
+pydantic==2.6.4
+pydantic-settings==2.2.1
+
+# ── ML / AI core ─────────────────────────────────────────────
+scikit-learn==1.4.1.post1
+xgboost==2.0.3
+catboost==1.2.10
+pandas==2.2.1
+numpy==1.26.4
+shap==0.45.0
+joblib==1.3.2
+
+# ── Experiment-only ML ────────────────────────────────────────
+# lightgbm is used ONLY in experiments/champion_challenger_v4.py
+# Not imported in any src/ production path.
+lightgbm==4.6.0
+
+# ── LangChain (NLP assistant + SQL agent) ────────────────────
+# Installed versions: langchain 0.1.x family.
+# Routes using these packages are loaded inside try/except in main.py
+# and fail gracefully if the import fails at runtime.
+langchain==0.1.16
+langchain-core==0.1.53
+langchain-community==0.0.36
+langchain-text-splitters==0.0.2
+
+# ── LangChain optional extensions (NOT installed in active venv) ──
+# These packages are listed for completeness but are NOT installed.
+# They are referenced in try/except blocks — the app runs without them.
+# Install manually if enabling the LangGraph / Groq / Redis features:
+#   pip install langchain-groq==0.2.4 langgraph==0.2.76 \
+#               langgraph-checkpoint-postgres==2.0.25 \
+#               redis==7.4.1 httpx-sse==0.4.3
+# langchain-groq==0.2.4
+# httpx-sse==0.4.3
+# langgraph==0.2.76
+# langgraph-checkpoint-postgres==2.0.25
+# redis==7.4.1
+
+# ── Scheduling / config ───────────────────────────────────────
+APScheduler==3.10.4
+python-dotenv==1.0.1
+
+# ── HTTP client ───────────────────────────────────────────────
+httpx==0.27.0
+
+# ── Auth ─────────────────────────────────────────────────────
+python-jose[cryptography]==3.5.0
+
+# ── Visualisation (used in experiments, not in src/) ─────────
+matplotlib==3.8.3
+
+# ── Testing ──────────────────────────────────────────────────
+pytest==8.1.1
+pytest-asyncio==0.23.6
