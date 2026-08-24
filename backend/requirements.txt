@@ -33,26 +33,20 @@ joblib==1.3.2
 lightgbm==4.6.0
 
 # ── LangChain (NLP assistant + SQL agent) ────────────────────
-# Installed versions: langchain 0.1.x family.
-# Routes using these packages are loaded inside try/except in main.py
-# and fail gracefully if the import fails at runtime.
-langchain==0.1.16
-langchain-core==0.1.53
-langchain-community==0.0.36
-langchain-text-splitters==0.0.2
+langchain==0.3.25
+langchain-core==0.3.62
+langchain-community==0.3.24
+langchain-text-splitters==0.3.8
 
-# ── LangChain optional extensions (NOT installed in active venv) ──
-# These packages are listed for completeness but are NOT installed.
-# They are referenced in try/except blocks — the app runs without them.
-# Install manually if enabling the LangGraph / Groq / Redis features:
-#   pip install langchain-groq==0.2.4 langgraph==0.2.76 \
-#               langgraph-checkpoint-postgres==2.0.25 \
-#               redis==7.4.1 httpx-sse==0.4.3
-# langchain-groq==0.2.4
-# httpx-sse==0.4.3
-# langgraph==0.2.76
-# langgraph-checkpoint-postgres==2.0.25
-# redis==7.4.1
+# ── LangChain extensions (Groq LLM + LangGraph HITL + Redis memory) ──
+# Required by: Analytics Agent (langchain-groq, groq)
+#              Underwriting HITL Agent (langgraph)
+#              Analytics session memory (redis — falls back to in-memory if unavailable)
+langchain-groq==0.2.4
+groq==0.37.1
+langgraph==0.2.76
+redis==7.4.1
+httpx-sse==0.4.0
 
 # ── Scheduling / config ───────────────────────────────────────
 APScheduler==3.10.4

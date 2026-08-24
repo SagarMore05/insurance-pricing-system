@@ -9,7 +9,6 @@ from sqlalchemy import create_engine, inspect as sa_inspect, text
 from langchain_community.utilities import SQLDatabase
 from langchain_community.agent_toolkits import create_sql_agent
 from langchain_community.agent_toolkits import SQLDatabaseToolkit
-from langchain_groq import ChatGroq
 
 from src.config import settings
 
@@ -673,6 +672,7 @@ class InsuranceAssistant:
             sample_rows_in_table_info=0,
         )
 
+        from langchain_groq import ChatGroq  # lazy import — avoids hard startup dependency
         llm = ChatGroq(
             model="llama-3.3-70b-versatile",
             temperature=0,
