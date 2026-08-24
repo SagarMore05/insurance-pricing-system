@@ -1,8 +1,76 @@
-# InsureAI — AI-Powered Car Insurance Pricing System
+# 🚗 Intelligent Risk-Based Premium Pricing Engine for Car Insurance Using Agentic AI
 
-An end-to-end machine learning system for actuarially-sound car insurance pricing with a React frontend, FastAPI backend, and continuous retraining pipeline.
+## 📌 Overview
+This project is a **production-grade AI-powered car insurance pricing platform** that calculates **personalized insurance premiums** based on a customer's risk profile.
 
-## Architecture
+Unlike traditional fixed pricing systems, this platform uses:
+- Machine Learning (Frequency–Severity Modeling)
+- Explainable AI (SHAP)
+- Agentic AI (Analytics + Underwriting Agents)
+- Actuarial Pricing Principles
+
+to deliver **accurate, transparent, and fair premium decisions**.
+
+---
+
+## 🎯 Core Principles
+
+- **Actuarial Correctness**  
+  Premium = Expected Loss × Loading Factor × Business Rules  
+  where  
+  Expected Loss = P(Claim) × E(Claim Amount)
+
+- **Separation of Concerns**  
+  Each layer (ML, Pricing, API, Agents, DB, Frontend) is modular and independently testable.
+
+---
+
+## 🚀 Key Features
+
+- 🔍 Personalized premium pricing using ML  
+- 📊 Frequency–Severity risk modeling  
+- 🧠 SHAP-based explainability (global + local)  
+- 🤖 Agentic AI:
+  - Analytics Agent (natural language insights)
+  - Underwriting Agent (risk + fraud detection with HITL)  
+- ⚙️ Rule-based pricing engine (actuarial logic)  
+- 🔁 Model retraining & governance pipeline  
+- 🔐 JWT-based admin authentication  
+- 📈 Driver Safety Score  
+- 🐳 Fully Dockerized system  
+- 🌐 FastAPI REST APIs  
+- 🗄️ PostgreSQL database (async ORM)
+
+---
+
+## 🧠 Tech Stack
+
+### Backend
+- Python, FastAPI, SQLAlchemy (async), Pydantic  
+
+### Frontend
+- React (TypeScript), Tailwind CSS, Recharts  
+- React Router, React Query, React Hook Form  
+
+### Machine Learning
+- CatBoost (Primary), XGBoost, LightGBM  
+- SHAP (Explainability)  
+
+### AI / Agents
+- LangChain (SQL Agent)  
+- LangGraph (Underwriting Agent)  
+- Groq LLM (LLaMA-based)  
+
+### Database
+- PostgreSQL (JSONB, UUID, indexed tables)  
+
+### DevOps
+- Docker, Docker Compose  
+- APScheduler (retraining jobs)  
+
+---
+
+## 🏗️ System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -11,256 +79,161 @@ An end-to-end machine learning system for actuarially-sound car insurance pricin
 └──────────────────────────────┬──────────────────────────────────┘
                                │ REST API
 ┌──────────────────────────────▼──────────────────────────────────┐
-│  FastAPI Backend  (src/api/)                                     │
+│  FastAPI Backend (src/api/)                                      │
 │  POST /quote  POST /policies  POST /claims  GET /admin/*        │
 └────────────┬────────────────────────────────────────────────────┘
              │
      ┌───────▼────────┐   ┌──────────────────────────────────────┐
-     │ ML Models       │   │ Pricing Engine (rules-based, no LLM) │
-     │ Model 1:        │──▶│                                      │
-     │  Claim Freq     │   │  expected_loss = P(claim) × severity │
-     │  (XGBClassifier)│   │  base_premium = expected_loss × 1.35 │
-     │ Model 2:        │   │  + business rule multipliers          │
-     │  Claim Severity │   │  → final_premium (floor ₹3k / cap    │
-     │  (XGBRegressor) │   │    ₹1.5L) + SHAP explanation         │
+     │ ML Models       │   │ Pricing Engine (rules-based)         │
+     │ Claim Frequency │──▶│ expected_loss = P(claim) × severity  │
+     │ (CatBoost)      │   │ base_premium = expected_loss × 1.35  │
+     │ Claim Severity  │   │ + business rules                     │
+     │ (CatBoost)      │   │ → final premium (₹3k – ₹1.5L)        │
      └───────┬─────────┘   └──────────────────────────────────────┘
              │
      ┌───────▼──────────────────┐  ┌──────────────────────────────┐
      │ PostgreSQL (SQLAlchemy)   │  │ Feedback Loop (APScheduler)  │
-     │ 8 tables with FK/indexes  │  │ Weekly retrain on actual     │
-     │ + read-only role for NLP  │  │ claim outcomes               │
+     │ 11 tables + JSONB fields  │  │ Weekly retraining            │
      └───────────────────────────┘  └──────────────────────────────┘
              │
      ┌───────▼────────────────────┐
      │ NLP Assistant (LangChain)  │
-     │ GPT-4 → SQL → read-only DB │
-     │ Parameterized · whitelist  │
+     │ Natural Language → SQL     │
      └────────────────────────────┘
 ```
 
-## Quick Start
+---
 
-### Prerequisites
-- Docker + Docker Compose
-- Python 3.11+ (for local dev)
-- Node.js 20+ (for local frontend dev)
+## 🧩 Detailed Architecture
 
-### 1. Start with Docker
+- **Frontend Layer**
+  - React SPA with multi-step quote wizard
+  - Admin dashboard with JWT authentication
+  - Axios interceptors for token handling
+
+- **API Layer**
+  - FastAPI (async)
+  - Versioned APIs (`/api/v1`, `/api/v2`)
+  - Middleware: logging, CORS, error handling
+
+- **ML Layer**
+  - Frequency Model → Claim probability  
+  - Severity Model → Claim cost  
+  - Combined Predictor → Expected Loss  
+
+- **Feature Enrichment**
+  - Vehicle risk mapping  
+  - City risk indexing  
+  - Driving score calculation  
+  - No Claim Bonus (NCB)
+
+- **Pricing Engine**
+  - Deterministic (no ML)
+  - Applies:
+    - Loading factor (1.35)
+    - Business rule multipliers
+    - Floor & cap constraints
+
+- **Explainability**
+  - Global SHAP → overall feature importance  
+  - Local SHAP → per-user explanation  
+
+- **Agent Layer**
+  - Analytics Agent → SQL insights via NLP  
+  - Underwriting Agent → fraud/risk detection + HITL  
+
+- **Database Layer**
+  - PostgreSQL with async SQLAlchemy  
+  - 11 tables, UUID PKs, JSONB columns  
+
+- **Governance & Retraining**
+  - Multi-algorithm training (XGB, LGBM, CatBoost)
+  - Champion model selection  
+  - Shadow deployment  
+  - Atomic promotion + rollback  
+  - Weekly retraining pipeline  
+
+---
+
+## 📸 Screenshots
+
+![SHAP Frequency](docs/screenshots/shap_frequency_summary.png)  
+![SHAP Severity](docs/screenshots/shap_severity_summary.png)
+
+---
+
+## ⚙️ How to Run
+
+### 🐳 Using Docker (Recommended)
 
 ```bash
-cd insurance-pricing-system
-
-# Copy env file and configure
-cp backend/.env.example backend/.env
-# Edit backend/.env — add OPENAI_API_KEY if you want the NLP assistant
-
-# Start all services
-docker compose up -d
-
-# Run database migrations
-docker compose exec api alembic upgrade head
-
-# Generate synthetic training data
-docker compose exec api python scripts/generate_synthetic_data.py
-
-# Train ML models (takes ~3-5 minutes)
-docker compose exec api python scripts/train_models.py
+docker-compose up --build
 ```
 
-Services:
-| Service | URL |
-|---------|-----|
-| Frontend | http://localhost:3000 |
-| API | http://localhost:8000 |
-| API Docs | http://localhost:8000/docs |
-| pgAdmin | http://localhost:5050 (profile: dev) |
+---
 
-### 2. Local Development (without Docker)
+### 💻 Manual Setup
 
+#### Backend
 ```bash
-# Backend
 cd backend
-python -m venv .venv
-.venv\Scripts\activate  # Windows
 pip install -r requirements.txt
+uvicorn src.api.main:app --reload
+```
 
-# Set up PostgreSQL and update .env
-cp .env.example .env
-
-# Run migrations
-alembic upgrade head
-
-# Generate data and train models
-python scripts/generate_synthetic_data.py
-python scripts/train_models.py
-
-# Start API
-uvicorn src.api.main:app --reload --port 8000
-
-# Frontend (separate terminal)
+#### Frontend
+```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-## API Reference
+---
 
-### POST /api/v1/quote
-Get an AI-calculated insurance premium.
+## 🔄 Workflow
 
-**Request body:**
-```json
-{
-  "age": 32,
-  "gender": "male",
-  "city": "mumbai",
-  "car_brand": "hyundai",
-  "car_model": "Creta",
-  "engine_cc": 1500,
-  "vehicle_age_years": 2,
-  "vehicle_value_inr": 1200000,
-  "driving_score": 78.5,
-  "annual_mileage_km": 15000,
-  "previous_claims_count": 0,
-  "years_licensed": 8
-}
-```
+1. User submits details via frontend  
+2. Data is preprocessed and enriched  
+3. ML models predict:
+   - Claim probability  
+   - Claim severity  
+4. Expected Loss is calculated  
+5. Pricing engine applies rules  
+6. SHAP explains the decision  
+7. Premium is displayed  
 
-**Response:**
-```json
-{
-  "prediction_id": "uuid",
-  "premium_amount_inr": 18450.0,
-  "risk_level": "medium",
-  "claim_probability": 0.17823,
-  "expected_claim_amount_inr": 72000.0,
-  "explanation": {
-    "base_premium": 17379.5,
-    "expected_loss": 12873.0,
-    "adjustments": [
-      {"reason": "no_claims_bonus", "factor": 0.9, "impact_inr": -1737.9}
-    ],
-    "final_premium": 15641.5,
-    "risk_level": "medium",
-    "summary": "Your premium is ₹15,642 (Medium Risk). Your clean claims history saved you ₹1,738."
-  },
-  "model_version": "v1.0.0",
-  "created_at": "2026-01-15T10:30:00Z"
-}
-```
+---
 
-### POST /api/v1/policies
-Convert a quote into an active policy.
-```json
-{ "prediction_id": "uuid", "customer_data": {...} }
-```
+## 🔐 Security
 
-### POST /api/v1/claims
-File a claim against a policy.
-```json
-{ "policy_id": "uuid", "claimed_amount_inr": 45000 }
-```
+- JWT-based authentication for admin  
+- Read-only DB access for NLP agent  
+- Parameterized SQL queries  
 
-### GET /api/v1/admin/dashboard
-Requires `X-Admin-Key` header. Returns KPI stats.
+---
 
-### POST /api/v1/assistant/query
-Requires `X-Admin-Key`. Natural language to SQL.
-```json
-{ "question": "What is the average premium for high-risk customers in Mumbai?" }
-```
+## 💼 Use Cases
 
-### POST /api/v1/feedback
-Submit actual claim outcome for model retraining.
-```json
-{
-  "prediction_id": "uuid",
-  "actual_claim_occurred": true,
-  "actual_claim_amount_inr": 38000
-}
-```
+- Insurance companies  
+- InsurTech platforms  
+- Risk analytics systems  
+- AI-driven pricing engines  
 
-### POST /api/v1/admin/retrain
-Manually trigger the retraining pipeline. Requires `X-Admin-Key`.
+---
 
-## ML Pipeline
+## 🚀 Future Enhancements
 
-### Models
-| Model | Type | Algorithm | Primary Metric |
-|-------|------|-----------|----------------|
-| Frequency | Binary classification | XGBoostClassifier | AUC-ROC |
-| Severity | Regression (log-scale) | XGBoostRegressor | RMSE |
+- Telematics integration (real-time driving data)  
+- Advanced fraud detection models  
+- Cloud deployment (AWS/GCP)  
+- Role-based access control  
 
-**Expected Loss Formula:**
-```
-expected_loss = P(claim) × E[claim_amount | claim occurred]
-base_premium  = expected_loss × 1.35  (35% loading factor)
-```
+---
 
-### Pricing Rules
-| Rule | Trigger | Factor |
-|------|---------|--------|
-| Young driver | age < 25 | ×1.30 |
-| Senior driver | age > 70 | ×1.15 |
-| Safe driver discount | score ≥ 85 | ×0.85 |
-| Poor driver surcharge | score < 50 | ×1.25 |
-| No claims bonus | 0 claims | ×0.90 |
-| High claims surcharge | ≥ 3 claims | ×1.40 |
-| High mileage | > 30,000 km | ×1.20 |
-| Low mileage discount | < 5,000 km | ×0.92 |
-| Luxury vehicle | value > ₹20L | ×1.15 |
+## 👨‍💻 Author
+**Sagar More**
 
-**Floor:** ₹3,000 · **Cap:** ₹1,50,000
+---
 
-### Retraining Pipeline
-- Runs every Sunday at 02:00 UTC (APScheduler)
-- Requires ≥ 500 new feedback records
-- Triggers if AUC-ROC drops below 0.72 or RMSE degrades >15%
-- Shadow testing: new model runs in parallel for 24h before promotion
-- Admin email notification on promotion
-
-## Environment Variables
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `DATABASE_URL` | Async PostgreSQL URL | — |
-| `OPENAI_API_KEY` | Required for NLP assistant | — |
-| `ADMIN_API_KEY` | Admin endpoint auth | `admin-secret-key` |
-| `MIN_PREMIUM_INR` | Premium floor | `3000` |
-| `MAX_PREMIUM_INR` | Premium cap | `150000` |
-| `MODEL_VERSION` | Active model version tag | `v1.0.0` |
-| `RETRAIN_MIN_SAMPLES` | Min feedback rows for retraining | `500` |
-
-## Running Tests
-
-```bash
-cd backend
-pytest tests/ -v
-```
-
-## Project Structure
-
-```
-insurance-pricing-system/
-├── backend/
-│   ├── src/
-│   │   ├── api/           FastAPI routes, Pydantic schemas
-│   │   ├── preprocessing/ InsurancePreprocessor pipeline
-│   │   ├── models/        Frequency, Severity, CombinedPredictor
-│   │   ├── engine/        Deterministic pricing engine
-│   │   ├── nlp_assistant/ LangChain SQL agent
-│   │   ├── retraining/    Feedback pipeline + APScheduler
-│   │   └── database/      SQLAlchemy ORM models + session
-│   ├── tests/             pytest test suite
-│   ├── alembic/           DB migrations
-│   ├── scripts/           Data generation + training
-│   └── requirements.txt
-├── frontend/
-│   └── src/
-│       ├── components/    QuoteForm, QuoteResult, AdminDashboard
-│       ├── pages/         Home, Quote, Policy, Admin
-│       ├── api/           Typed API client
-│       └── types/         TypeScript interfaces
-├── docker-compose.yml
-└── docker-compose.prod.yml
-```
+## ⭐ Support
+If you like this project, give it a ⭐ on GitHub!
